@@ -5,7 +5,7 @@
   "author": "Vaidas Bagdonas <shibalba1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "predeploy": "hugo",
+    "predeploy": "hugo --cleanDestinationDir",
     "deploy": "gh-pages -d public"
   },
   "devDependencies": {
