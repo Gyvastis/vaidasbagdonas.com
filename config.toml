@@ -1,5 +1,5 @@
 # Site settings
-baseurl = ""
+baseurl = "https://vaidasbagdonas.com/"
 languageCode = "en"
 title = "Vaidas Bagdonas Blog"
 theme = "hugo-theme-cactus-plus"
