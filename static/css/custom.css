@@ -1,0 +1,11 @@
+#wrapper {
+  font-size: 1.1em;
+  line-height: 1.75em;
+  color: #181d2a;
+}
+article, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather' !important;
+}
+section.post h1, section.post h2, section.post h3, section.post h4, section.post h5, section.post h6 {
+  font-weight: 600 !important;
+}
