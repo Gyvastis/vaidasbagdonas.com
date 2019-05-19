@@ -9,8 +9,8 @@ hasCJKLanguage = false
 
 [params]
 	author = "Vaidas Bagdonas"
-	description = "The path of (re)discovering myself"
-	bio = "author biography"
+	description = "Vaidas Bagdonas personal blog exploring the path of (re)discovering himself"
+	bio = "The path of (re)discovering myself"
 
 	twitter = "VaidasBagdonas"
 	facebook = "your_facebook_id"
@@ -74,6 +74,6 @@ hasCJKLanguage = false
 
 # Add additional social link entries underneath
 [social]
-	facebook-square = "https://www.facebook.com/nodejh"
-	twitter-square = "https://www.twitter.com/nodejh"
-	github-square = "https://www.github.com/nodejh"
+	facebook-square = ""
+	twitter-square = "https://www.twitter.com/VaidasBagdonas"
+	github-square = ""
