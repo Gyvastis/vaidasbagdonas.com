@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=4">
+<link rel="stylesheet" href="/style.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,14 +56,14 @@
       <p class="lead" style="margin-top:14px">One engineer for the whole job – from a landing page to a complex AI-powered platform. Golang, DevOps and AI are my daily work.</p>
       <div class="chips"><span class="chip">Golang</span><span class="chip">PHP / Symfony</span><span class="chip">AI / LLM</span><span class="chip">iOS / Android</span><span class="chip">DevOps</span><span class="chip">WordPress / Shopify</span></div>
       <div class="actions">
-        <a class="btn btn-primary" href="mailto:bagdonas.vaidas@gmail.com?subject=Enquiry%20from%20vaidasbagdonas.com">Tell me about your project →</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vaidas-bagdonas/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/vaidas-bagdonas/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn btn-ghost" href="#services">What I do</a>
       </div>
     </div>
     <div class="portrait">
       <img src="/img/avatar.jpg" alt="Vaidas Bagdonas" width="260" height="260">
       <span class="badge">12+ years</span>
-      <p>Vilnius, Lithuania · remote</p>
+      <p>Vilnius, Lithuania<br>Working remotely</p>
     </div>
   </div>
 </section>
@@ -132,7 +132,7 @@
     <h2>Send me <span class="hit">2–3 sentences</span></h2>
     <p class="lead">What you want to achieve and by when. I reply within 24 hours.</p>
     <div class="contacts">
-      <a class="contact" href="mailto:bagdonas.vaidas@gmail.com"><small>Email</small><span>bagdonas.vaidas@gmail.com</span></a>
+      <a class="contact" href="mailto:bagdonas.vaidas@gmail.com" data-copy="bagdonas.vaidas@gmail.com" data-copied="Copied ✓"><small>Email · click to copy</small><span>bagdonas.vaidas@gmail.com</span></a>
       <a class="contact" href="https://www.linkedin.com/in/vaidas-bagdonas/" target="_blank" rel="noopener"><small>LinkedIn</small><span>vaidas-bagdonas</span></a>
       <a class="contact" href="https://paslaugos.lt/vaidas-bagdonas-vp740" target="_blank" rel="noopener"><small>Paslaugos.lt</small><span>Services, prices, reviews (LT)</span></a>
     </div>
@@ -141,5 +141,14 @@
 
 <footer class="site-footer"><div class="container">© 2026 Vaidas Bagdonas · Vilnius, Lithuania</div></footer>
 
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(el => el.addEventListener('click', async event => {
+  event.preventDefault();
+  try { await navigator.clipboard.writeText(el.dataset.copy); } catch { return; }
+  const label = el.querySelector('small'); const original = label.textContent;
+  label.textContent = el.dataset.copied; setTimeout(() => { label.textContent = original; }, 1800);
+}));
+</script>
 </body>
 </html>

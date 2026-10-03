@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=4">
+<link rel="stylesheet" href="/style.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,14 +61,14 @@
       <p class="lead" style="margin-top:14px">Vienas programuotojas visiems jūsų IT poreikiams – nuo svetainės iki sudėtingos sistemos su dirbtiniu intelektu. Kasdien dirbu su Golang, DevOps ir AI.</p>
       <div class="chips"><span class="chip">Golang</span><span class="chip">PHP / Symfony</span><span class="chip">AI / LLM</span><span class="chip">iOS / Android</span><span class="chip">DevOps</span><span class="chip">WordPress / Shopify</span></div>
       <div class="actions">
-        <a class="btn btn-primary" href="mailto:bagdonas.vaidas@gmail.com?subject=Užklausa%20iš%20vaidasbagdonas.com">Aprašykite užduotį →</a>
-        <a class="btn btn-ghost" href="https://paslaugos.lt/vaidas-bagdonas-vp740" target="_blank" rel="noopener">Paslaugos.lt profilis</a>
+        <a class="btn btn-primary" href="https://paslaugos.lt/vaidas-bagdonas-vp740" target="_blank" rel="noopener">Aprašykite užduotį</a>
+        <a class="btn btn-ghost" href="#paslaugos">Paslaugos ir kainos</a>
       </div>
     </div>
     <div class="portrait">
       <img src="/img/avatar.jpg" alt="Vaidas Bagdonas" width="260" height="260">
       <span class="badge">12+ metų patirtis</span>
-      <p>Vilnius · visa Lietuva · nuotoliu</p>
+      <p>Vilnius, visa Lietuva<br>Dirbu ir nuotoliu</p>
     </div>
   </div>
 </section>
@@ -140,7 +140,7 @@
         <h2>-20 % pirmiems 5 klientams</h2>
         <p>Spalio pasiūlymas iki 10-31. Mainais tik paprašysiu atsiliepimo po darbo.</p>
       </div>
-      <a class="btn" href="mailto:bagdonas.vaidas@gmail.com?subject=Spalio%20pasiūlymas">Noriu pasiūlymo →</a>
+      <a class="btn" href="https://paslaugos.lt/vaidas-bagdonas-vp740" target="_blank" rel="noopener">Noriu pasiūlymo</a>
     </div>
   </div>
 </section>
@@ -151,7 +151,7 @@
     <h2>Parašykite <span class="hit">2–3 sakinius</span></h2>
     <p class="lead">Ką norite pasiekti ir iki kada. Atsakau per 24 val.</p>
     <div class="contacts">
-      <a class="contact" href="mailto:bagdonas.vaidas@gmail.com"><small>El. paštas</small><span>bagdonas.vaidas@gmail.com</span></a>
+      <a class="contact" href="mailto:bagdonas.vaidas@gmail.com" data-copy="bagdonas.vaidas@gmail.com" data-copied="Nukopijuota ✓"><small>El. paštas · spauskite, kad nukopijuotumėte</small><span>bagdonas.vaidas@gmail.com</span></a>
       <a class="contact" href="https://paslaugos.lt/vaidas-bagdonas-vp740" target="_blank" rel="noopener"><small>Paslaugos.lt</small><span>Profilis, kainos, atsiliepimai</span></a>
       <a class="contact" href="https://www.linkedin.com/in/vaidas-bagdonas/" target="_blank" rel="noopener"><small>LinkedIn</small><span>vaidas-bagdonas</span></a>
     </div>
@@ -160,5 +160,14 @@
 
 <footer class="site-footer"><div class="container">© 2026 Vaidas Bagdonas · Vilnius, Lietuva</div></footer>
 
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(el => el.addEventListener('click', async event => {
+  event.preventDefault();
+  try { await navigator.clipboard.writeText(el.dataset.copy); } catch { return; }
+  const label = el.querySelector('small'); const original = label.textContent;
+  label.textContent = el.dataset.copied; setTimeout(() => { label.textContent = original; }, 1800);
+}));
+</script>
 </body>
 </html>
