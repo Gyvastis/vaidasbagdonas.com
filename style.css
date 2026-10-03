@@ -120,5 +120,6 @@ h3 { font-size: 22px; letter-spacing: -0.02em; }
 }
 .more { margin-top: 28px; }
 .more strong { color: var(--lime); }
-.card .icon { width: 48px; height: 48px; border-radius: 12px; background: var(--green); color: var(--lime); display: grid; place-items: center; margin-bottom: 6px; }
-.card .icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.card-head { display: flex; align-items: flex-start; gap: 10px; }
+.card-head .icon { color: #8a938e; flex: none; display: flex; margin-top: 1px; }
+.card-head .icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
