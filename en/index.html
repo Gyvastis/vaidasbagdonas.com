@@ -15,10 +15,8 @@
 <meta property="og:image" content="https://vaidasbagdonas.com/img/og-en.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d3b2e'/><text x='50%' y='58%' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='900' font-size='30' fill='%23c8ff3d'>VB</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css?v=5">
+<link rel="preload" href="/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=6">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,7 +59,7 @@
       </div>
     </div>
     <div class="portrait">
-      <img src="/img/avatar.jpg" alt="Vaidas Bagdonas" width="260" height="260">
+      <img src="/img/avatar-400.webp" srcset="/img/avatar-280.webp 280w, /img/avatar-400.webp 400w" sizes="(max-width: 820px) 140px, 260px" fetchpriority="high" alt="Vaidas Bagdonas" width="260" height="260">
       <span class="badge">12+ years</span>
       <p>Vilnius, Lithuania<br>remote</p>
     </div>
@@ -90,7 +88,7 @@
     <h2>What I've <span class="hit">built</span></h2>
     <div class="projects">
       <article class="project">
-        <img src="/img/namedry-home.jpg" alt="namedry.com home page" loading="lazy" width="1400" height="875">
+        <img src="/img/namedry-home-1400.webp" srcset="/img/namedry-home-700.webp 700w, /img/namedry-home-1400.webp 1400w" sizes="(max-width: 820px) calc(100vw - 72px), 560px" alt="namedry.com home page" loading="lazy" width="1400" height="875">
         <div>
           <span class="tag">My own product – end to end</span>
           <h3>namedry.com</h3>
@@ -100,7 +98,7 @@
         </div>
       </article>
       <article class="project">
-        <img src="/img/trunkstar-home.jpg" alt="Trunkstar platform" loading="lazy" width="1400" height="875">
+        <img src="/img/trunkstar-home-1400.webp" srcset="/img/trunkstar-home-700.webp 700w, /img/trunkstar-home-1400.webp 1400w" sizes="(max-width: 820px) calc(100vw - 72px), 560px" alt="Trunkstar platform" loading="lazy" width="1400" height="875">
         <div>
           <span class="tag team">Contributed as part of the team</span>
           <h3>Trunkstar</h3>
