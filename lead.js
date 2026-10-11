@@ -1,5 +1,5 @@
 // owner must set PIXEL_ID before launch, see paslaugos/data/ads/SETUP.md
-const PIXEL_ID = ''; // Meta Pixel ID; empty = no banner, no tracking
+const PIXEL_ID = '29054931437435029'; // Meta Pixel ID; empty = no banner, no tracking
 const MAILTO = 'info@vaidasbagdonas.com';
 const ENDPOINT = '/api/lead';
 
