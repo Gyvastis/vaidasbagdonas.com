@@ -1,0 +1,7 @@
+{
+  "name": "vaidasbagdonas-com",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "^7.0.0"
+  }
+}
