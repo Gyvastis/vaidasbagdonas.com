@@ -21,6 +21,7 @@ function captureUtm() {
 function loadPixel() {
   if (!PIXEL_ID || window.fbq) return;
   const fbq = window.fbq = function () { fbq.callMethod ? fbq.callMethod.apply(fbq, arguments) : fbq.queue.push(arguments); };
+  if (!window._fbq) window._fbq = fbq; // required by fbevents.js, otherwise it reports conflicting pixels and drops events
   fbq.push = fbq; fbq.loaded = true; fbq.version = '2.0'; fbq.queue = [];
   const script = document.createElement('script');
   script.async = true;
