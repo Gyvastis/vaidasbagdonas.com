@@ -38,11 +38,15 @@
 .pack ul { padding-left: 18px; color: var(--muted-dark); font-size: 15.5px; flex: 1; }
 .pack .btn { justify-content: center; background: var(--green); color: var(--white); margin-top: 8px; }
 .note { color: var(--muted-dark); font-size: 14.5px; margin-top: 16px; }
-.compare { align-items: start; display: grid; gap: 16px; margin-top: 28px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.compare figure { background: var(--white); border: 1px solid #e6e1d6; border-radius: var(--radius); padding: 12px; }
-.compare img { border-radius: 10px; width: 100%; }
-.compare figcaption { font-weight: 700; margin-top: 10px; font-size: 15px; }
-.compare .after { border: 3px solid var(--green); }
+.compare { align-items: start; display: grid; gap: 16px; margin-top: 28px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+.compare figure { background: var(--white); border: 1px solid #e6e1d6; border-radius: var(--radius); padding: 14px; color: var(--ink, #0b0b0b); }
+.compare figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 12px; font-size: 17px; }
+.compare figcaption span { font-size: 13px; font-weight: 700; color: var(--muted-dark); }
+.compare .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.compare .tag { display: inline-block; font-weight: 800; font-size: 14px; margin-bottom: 6px; padding: 2px 12px; border-radius: 999px; background: #ece8dc; }
+.compare .po .tag { background: var(--lime); color: var(--green); }
+.compare img { border-radius: 10px; width: 100%; height: auto; border: 1px solid #e6e1d6; display: block; }
+.compare .po img { border: 3px solid var(--green); }
 .bio { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
 .bio img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid var(--lime); }
 .bio > div { flex: 1 1 280px; }
@@ -148,20 +152,33 @@ button.btn:disabled { opacity: .6; }
 
 <section class="section dark">
   <div class="container">
-    <div class="eyebrow">Pavyzdys</div>
+    <div class="eyebrow">Pavyzdžiai</div>
     <h2>Senas dizainas <span class="hit">ir naujas telefone</span></h2>
-    <p class="lead">Dizaino pavyzdys: autoserviso svetainė. Tekstai – iš jų senosios svetainės, dizainas naujas.</p>
+    <p class="lead">Trys dizaino pavyzdžiai skirtingoms sritims. Tekstai – iš senųjų svetainių, dizainas naujas; pavadinimai ir kontaktai pašalinti.</p>
     <div class="compare">
-      <figure>
-        <img src="pavyzdys-pries.webp" width="900" height="432" alt="Autoserviso senoji svetainė, kompiuterio versija: mėlynas meniu, didelė automobilio nuotrauka" loading="lazy">
-        <figcaption>Prieš: senoji svetainė (kompiuterio ekranas)</figcaption>
+      <figure class="ex">
+        <figcaption><b>Odontologijos klinika</b><span>Dizaino pavyzdys</span></figcaption>
+        <div class="pair">
+          <div><span class="tag">Prieš</span><img src="ex-dental-before.webp" width="360" height="779" alt="Odontologijos klinikos svetainė telefone: senas variantas" loading="lazy" decoding="async"></div>
+          <div class="po"><span class="tag">Po</span><img src="ex-dental-after.webp" width="360" height="779" alt="Odontologijos klinikos svetainė telefone: naujas dizainas" loading="lazy" decoding="async"></div>
+        </div>
       </figure>
-      <figure class="after">
-        <img src="pavyzdys-po.webp" width="780" height="516" alt="Naujo dizaino pavyzdys telefone: didelė antraštė ir mygtukas „Registruotis remontui“" loading="lazy">
-        <figcaption>Po: naujo dizaino pavyzdys (telefono ekranas)</figcaption>
+      <figure class="ex">
+        <figcaption><b>Statybos įmonė</b><span>Dizaino pavyzdys</span></figcaption>
+        <div class="pair">
+          <div><span class="tag">Prieš</span><img src="ex-build-before.webp" width="360" height="779" alt="Statybos įmonės svetainė telefone: senas variantas" loading="lazy" decoding="async"></div>
+          <div class="po"><span class="tag">Po</span><img src="ex-build-after.webp" width="360" height="779" alt="Statybos įmonės svetainė telefone: naujas dizainas" loading="lazy" decoding="async"></div>
+        </div>
+      </figure>
+      <figure class="ex">
+        <figcaption><b>Viešbutis</b><span>Dizaino pavyzdys</span></figcaption>
+        <div class="pair">
+          <div><span class="tag">Prieš</span><img src="ex-hotel-before.webp" width="360" height="779" alt="Viešbučio svetainė telefone: senas variantas" loading="lazy" decoding="async"></div>
+          <div class="po"><span class="tag">Po</span><img src="ex-hotel-after.webp" width="360" height="779" alt="Viešbučio svetainė telefone: naujas dizainas" loading="lazy" decoding="async"></div>
+        </div>
       </figure>
     </div>
-    <p class="fine" style="margin-top:14px">Tai demonstracinis dizaino pavyzdys, ne pristatytas užsakymas. Kiekvienai svetainei dizainą ir tekstus parengiu iš jūsų informacijos.</p>
+    <p class="fine" style="margin-top:14px">Tai demonstraciniai dizaino pavyzdžiai, ne pristatyti užsakymai. Kiekvienai svetainei dizainą ir tekstus parengiu iš jūsų informacijos.</p>
   </div>
 </section>
 
