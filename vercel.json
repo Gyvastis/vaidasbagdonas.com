@@ -35,6 +35,77 @@
           "value": "noindex, nofollow"
         }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; frame-src https://maps.google.com https://www.google.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/demo/klinika",
+      "destination": "/demo/visdenta/anon.html"
+    },
+    {
+      "source": "/demo/klinika/",
+      "destination": "/demo/visdenta/anon.html"
+    },
+    {
+      "source": "/demo/klinika/:path+",
+      "destination": "/demo/visdenta/:path+"
+    },
+    {
+      "source": "/demo/statyba",
+      "destination": "/demo/glosaris/anon.html"
+    },
+    {
+      "source": "/demo/statyba/",
+      "destination": "/demo/glosaris/anon.html"
+    },
+    {
+      "source": "/demo/statyba/:path+",
+      "destination": "/demo/glosaris/:path+"
+    },
+    {
+      "source": "/demo/viesbutis",
+      "destination": "/demo/runmis/anon.html"
+    },
+    {
+      "source": "/demo/viesbutis/",
+      "destination": "/demo/runmis/anon.html"
+    },
+    {
+      "source": "/demo/viesbutis/:path+",
+      "destination": "/demo/runmis/:path+"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/svetaine",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/svetaine/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
