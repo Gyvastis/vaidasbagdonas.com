@@ -6,6 +6,7 @@ const sp = '(?:\\s|&nbsp;|\\u00a0)+';
 const phone = new RegExp(`\\+370(?:${sp})*\\d(?:${sp}|\\d){6,}`, 'g');
 const mail = /[\w.+-]+@(?!pavyzdys\.lt)[\w-]+(?:\.[\w-]+)+/g;
 const common = [
+  [/src="logo(?:-white)?\.(?:svg|png)"/g, 'src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"'],
   [/tel:\+370\d+/g, 'tel:+37000000000'],
   [phone, '+370&nbsp;000&nbsp;00000'],
   [mail, 'info@pavyzdys.lt'],
