@@ -213,7 +213,7 @@ section{padding:var(--s6) 0}
 .tile h3{font-size:clamp(28px,3vw,44px)}
 .tile p{font-size:17px;max-width:44ch}
 .tile .cap{transform:translateY(0)}
-.tile img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tile img{transition:transform .4s cubic-bezier(.2,.7,.2,1)}
 .tile:hover img,.tile:focus-within img{transform:scale(1.05)}
 .tile p{max-height:0;opacity:0;overflow:hidden;transition:max-height .4s,opacity .4s,margin .4s}
 .tile:hover p,.tile:focus-within p,.tile:focus p{max-height:90px;opacity:1}
@@ -241,14 +241,14 @@ header.top.scrolled .logo img{height:36px}
 @keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 @keyframes zoomout{from{transform:scale(1.12)}to{transform:scale(1)}}
 @keyframes reveal{from{clip-path:inset(0 0 100% 0 round 20px)}to{clip-path:inset(0 0 0 0 round 20px)}}
-.js .hero .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i,0) * 110ms + 80ms)}
-.js .hero h1 mark{box-shadow:none;background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/0 .28em no-repeat;animation:mark .9s .75s cubic-bezier(.2,.7,.2,1) forwards}
+.js .hero .rise{opacity:0;animation:rise .5s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i,0) * 60ms + 60ms)}
+.js .hero h1 mark{box-shadow:none;background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/0 .28em no-repeat;animation:mark .6s .45s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes mark{to{background-size:100% .28em}}
-.js .stage-photo{animation:fade 1s .1s ease both}
-.js .stage-photo img{animation:zoomout 2s .1s cubic-bezier(.2,.7,.2,1) both}
-.js .go{animation:rise .8s 1s cubic-bezier(.2,.7,.2,1) both}
+.js .stage-photo{animation:fade .6s .05s ease both}
+
+
 @keyframes fade{from{opacity:0}to{opacity:1}}
-.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 90ms);will-change:opacity,transform}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 60ms);will-change:opacity,transform}
 .js .rv.in{opacity:1;transform:none;will-change:auto}
 @media(prefers-reduced-motion:reduce){.btn:active{transform:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.tile img,.tile p,.tile .cap{transition:none}}
@@ -433,12 +433,12 @@ var hdr=document.querySelector("header.top");
 var sent=document.createElement("div");sent.style.cssText="position:absolute;top:0;left:0;width:1px;height:90px;pointer-events:none";document.body.prepend(sent);
 if("IntersectionObserver" in window){
 new IntersectionObserver(function(e){hdr.classList.toggle("scrolled",!e[0].isIntersecting)}).observe(sent);
-var sets=[".head>*",".facts li",".cards li",".svc li",".free",".pts li",".quote .wrap>*",".contact .wrap>*",".also"];
+var sets=[".head",".cards"];
 if(matchMedia("(min-width:760px)").matches)sets.push(".tile");
-sets.forEach(function(sel){var prev=null,i=0;[].forEach.call(document.querySelectorAll(sel),function(el){var p=el.parentNode;if(p!==prev){i=0;prev=p}el.classList.add("rv");el.style.setProperty("--d",Math.min(i%4,3));i++})});
+sets.forEach(function(sel){var prev=null,i=0;[].forEach.call(document.querySelectorAll(sel),function(el){var p=el.parentNode;if(p!==prev){i=0;prev=p}el.classList.add("rv");el.style.setProperty("--d",Math.min(i%2,1));i++})});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
 [].forEach.call(document.querySelectorAll(".rv"),function(el){io.observe(el)});
-var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||"",start=end>100?end-45:0,t0=performance.now(),d=1400;
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||"",start=end>100?end-45:0,t0=performance.now(),d=900;
 (function f(t){var k=Math.min(1,(t-t0)/d),v=Math.round(start+(end-start)*(1-Math.pow(1-k,3)));el.innerHTML=v+suf;if(k<1)requestAnimationFrame(f)})(t0)})},{threshold:.6});
 [].forEach.call(document.querySelectorAll("[data-count]"),function(el){co.observe(el)});
 }})();
