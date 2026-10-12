@@ -106,6 +106,31 @@
       "source": "/svetaine/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/demo/rimosta",
+      "destination": "/demo/rimosta/",
+      "permanent": false
+    },
+    {
+      "source": "/demo/pavarucentras",
+      "destination": "/demo/pavarucentras/",
+      "permanent": false
+    },
+    {
+      "source": "/demo/visdenta",
+      "destination": "/demo/visdenta/",
+      "permanent": false
+    },
+    {
+      "source": "/demo/glosaris",
+      "destination": "/demo/glosaris/",
+      "permanent": false
+    },
+    {
+      "source": "/demo/runmis",
+      "destination": "/demo/runmis/",
+      "permanent": false
     }
   ]
 }
