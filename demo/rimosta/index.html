@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Statybos ir remonto darbai | UAB „Rimosta“</title>
-<meta name="description" content="Statyba, rekonstrukcija ir renovacija, apdailos darbai, elektros montavimas. UAB „Rimosta“, Vilnius. Nemokama konsultacija.">
+<meta name="description" content="Kokybiška, prieinama ir profesionali statyba. Statyba, rekonstrukcija ir renovacija, apdaila, elektros montavimas. UAB „Rimosta“, Vilnius. Nemokama konsultacija.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="lt_LT">
 <meta property="og:title" content="Statybos ir remonto darbai | UAB „Rimosta“">
@@ -14,228 +14,373 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2320252b'/%3E%3Cpath fill='%23f5b800' d='M50 10 90 50 50 90 10 50z'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23151515'/%3E%3Cpath fill='%23ffc526' d='M50 10 90 50 50 90 10 50z'/%3E%3C/svg%3E">
+<script>(function(){try{var q=location.search.indexOf("static=1")>-1,r=matchMedia("(prefers-reduced-motion:reduce)").matches;if(!q&&!r)document.documentElement.className="js"}catch(e){}})()</script>
 <style>
-:root{--ink:#1b2026;--coal:#20252b;--coal2:#2c333b;--amber:#f5b800;--amber-d:#c99700;--sand:#f4f1ea;--line:#ddd8cc;--muted:#5b6470;--bg:#fff}
+:root{
+--ink:#151515;--ink2:#3d3a35;--muted:#5c5850;--bg:#fbfaf6;--paper:#fff;--line:#e3dfd3;--yellow:#ffc526;--yellow-d:#e5aa00;--char:#17181a;
+--r:20px;--rs:12px;
+--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:64px;--s6:104px;
+--font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;padding-bottom:calc(76px + env(safe-area-inset-bottom));font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;font:18px/1.65 var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%;display:block}
-a{color:var(--ink)}
-.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
-.demo{background:#fff8e1;color:#5c4400;font-size:13px;text-align:center;padding:6px 16px;border-bottom:1px solid #f0dca0}
-.demo a{color:inherit}
-header.top{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
-.logo img{height:44px;width:auto}
-nav{display:none;gap:6px}
-nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:10px 12px;border-radius:8px;border-bottom:2px solid transparent}
-nav a:hover{background:var(--sand)}
-nav a[aria-current]{border-bottom-color:var(--amber-d);border-radius:8px 8px 0 0}
+a{color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
 .ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.btn{transition:background .15s,transform .15s;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
-.btn-primary{background:var(--amber);color:#1a1300}
-.btn-primary:hover{background:#ffc926;transform:translateY(-1px)}
-.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-.btn-dark{background:var(--coal);color:#fff}
-.btn-dark:hover{background:var(--coal2)}
-.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--amber-d);outline-offset:2px}
-.hero :focus-visible{outline-color:var(--amber)}
-.top .btn{min-height:42px;padding:0 14px;font-size:14px;white-space:nowrap}.num{display:none}
-.hero{background:var(--coal);color:#fff;overflow:hidden;position:relative;isolation:isolate}
-.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% center;z-index:-2}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,24,29,.8),rgba(20,24,29,.62) 55%,rgba(20,24,29,.9))}
-.hero .wrap{padding:56px 0 64px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--amber);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin:0 0 12px}
-.eyebrow .ic{width:16px;height:16px}
-h1{font-size:clamp(30px,7vw,54px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em;text-wrap:balance}
-.hero p.lead{font-size:18px;color:#e8e6e0;max-width:54ch;margin:0 0 28px;text-wrap:pretty}
-.cta{display:grid;gap:12px}
-.badges{display:flex;flex-wrap:wrap;gap:10px 20px;margin:28px 0 0;padding:0;list-style:none;color:#e8e6e0;font-size:15px}
-.badges li{display:flex;align-items:center;gap:8px}
-.badges .ic{width:18px;height:18px;color:var(--amber);stroke-width:2.6}
-.why .badges .ic{color:var(--amber-d)}
-section{padding:56px 0}
-section.alt{background:var(--sand)}
-h2{font-size:clamp(26px,5vw,36px);line-height:1.15;margin:0 0 12px;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:0 0 32px;max-width:60ch;text-wrap:pretty}
-h2,h3{text-wrap:balance}
-.grid{display:grid;gap:16px}
-.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
-.card h3{margin:12px 0 6px;font-size:18px}
-.card p{margin:0;color:var(--muted)}
-.card.main{border-color:var(--amber-d);box-shadow:0 0 0 1px var(--amber-d)}
-.ico{width:44px;height:44px;border-radius:10px;background:#fdf1c4;color:#7a5a00;display:grid;place-items:center}
-.ico svg{width:24px;height:24px}
-.proj{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-.proj img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--coal)}
-.proj div{padding:16px 18px 20px}
-.proj h3{margin:0 0 4px;font-size:18px}
-.proj p{margin:0;color:var(--muted);font-size:15px}
-.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a5a00;margin-bottom:6px}
-.split{display:grid;gap:32px;align-items:start}
-.plain{margin:0;padding:0;list-style:none;display:grid;gap:12px}
-.plain li{display:flex;gap:10px;align-items:flex-start}
-.plain .ic{margin-top:5px;width:18px;height:18px;color:var(--amber-d);stroke-width:2.6}
-form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:16px;box-shadow:0 10px 30px rgba(27,32,38,.08)}
-label{display:grid;gap:6px;font-weight:600;font-size:14px}
-input,select,textarea{font:inherit;font-weight:400;padding:12px;border:1.5px solid #9aa3ad;border-radius:8px;background:#fff;color:var(--ink);min-height:48px;width:100%}
-textarea{min-height:96px;resize:vertical}
-.row{display:grid;gap:16px}
-.notice{display:none;background:#fff8e1;border:1px solid #f0dca0;color:#5c4400;padding:14px;border-radius:10px;font-size:15px}
+h1,h2,h3{font-weight:800;letter-spacing:-.035em;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,5.4vw,60px)}
+h3{letter-spacing:-.02em}
+.kicker{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 var(--s2)}
+.kicker::before{content:"";width:28px;height:4px;border-radius:2px;background:var(--yellow)}
+.lead{font-size:clamp(18px,2vw,21px);color:var(--ink2);max-width:46ch;margin:0;text-wrap:pretty}
+.demo{background:#fff8e1;color:#5c4400;font-size:13px;text-align:center;padding:6px 16px;border-bottom:1px solid #f0dca0;line-height:1.4}
+.demo a{color:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:var(--rs);font:700 17px/1 var(--font);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,transform .15s,border-color .15s;white-space:nowrap}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{background:#ffd154;transform:translateY(-2px)}
+.btn-o{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-o:hover{background:var(--ink);color:#fff}
+.btn-d{background:var(--ink);color:#fff}
+.btn-d:hover{background:#2b2b2b;transform:translateY(-2px)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.on-dark :focus-visible{outline-color:var(--yellow)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:30;background:rgba(251,250,246,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{width:min(1440px,100% - 24px);padding-inline:12px;display:flex;align-items:center;gap:var(--s2);min-height:72px}
+.logo{display:block;margin-right:auto}.logo img{height:46px;width:auto}
+nav.main{display:none}
+nav.main a{text-decoration:none;font-weight:600;font-size:16px;padding:10px 14px;border-radius:8px}
+nav.main a:hover{background:#efece2}
+nav.main a[aria-current]{box-shadow:inset 0 -3px 0 var(--yellow)}
+.call{min-height:48px;padding:0 18px;font-size:16px}.call .num{display:none}
+details.menu{position:relative}
+details.menu summary{list-style:none;display:grid;place-items:center;width:48px;height:48px;border:2px solid var(--ink);border-radius:var(--rs);cursor:pointer}
+details.menu summary::-webkit-details-marker{display:none}
+details.menu .close{display:none}
+details.menu[open] .open{display:none}details.menu[open] .close{display:block}
+details.menu .panel{position:fixed;left:0;right:0;top:calc(72px + 0px);background:var(--bg);border-bottom:1px solid var(--line);padding:var(--s2) 20px var(--s3);display:grid;box-shadow:0 20px 30px rgba(0,0,0,.08)}
+details.menu .panel a{text-decoration:none;font-size:24px;font-weight:700;letter-spacing:-.02em;padding:14px 0;border-bottom:1px solid var(--line)}
+
+/* hero */
+.hero{padding:var(--s2) 0 0}
+.wide{width:min(1440px,100% - 24px);margin-inline:auto}
+.stage{position:relative;display:flex;flex-direction:column}
+.stage-photo{margin:0;aspect-ratio:1/.72;order:1;background:#2a2c2f;clip-path:polygon(0 0,52% 0,60% 36px,68% 0,100% 0,100% 100%,0 100%)}
+.stage-photo img{width:100%;height:100%;object-fit:cover;object-position:30% center}
+.panel-hero{order:2;position:relative;background:var(--bg);padding:var(--s2) 8px 0 8px;margin-top:-1px}
+.hero h1{font-size:clamp(40px,10.6vw,92px)}
+.hero h1 mark{background:none;color:inherit;box-shadow:inset 0 -.28em 0 var(--yellow)}
+.panel-hero .lead{margin-top:var(--s2)}
+.cta{display:none;gap:12px;margin-top:var(--s3)}
+.chips{order:3;display:flex;flex-wrap:wrap;gap:8px 10px;margin:var(--s3) 8px 0;padding:0;list-style:none}
+.chips li{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--paper)}
+.chips .ic{width:16px;height:16px;color:var(--yellow-d);stroke-width:3}
+.go{display:none}
+
+/* facts */
+.facts{padding:var(--s5) 0 0}
+.facts ol{list-style:none;margin:0;padding:0;display:grid;border-top:2px solid var(--ink)}
+.facts li{display:grid;grid-template-columns:150px 1fr;gap:var(--s2);align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.facts b{font-size:56px;line-height:1;letter-spacing:-.05em;font-weight:800;font-variant-numeric:tabular-nums}
+.facts span{color:var(--ink2);font-size:17px;line-height:1.45}
+.facts small{font-size:.38em;letter-spacing:-.01em;font-weight:700}
+
+section{padding:var(--s5) 0}
+.head{display:grid;gap:var(--s2);margin-bottom:var(--s4)}
+
+/* services */
+.services{padding-bottom:0}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;height:190px;overflow:hidden;border-radius:var(--r)}
+.strip img{width:100%;height:100%;object-fit:cover}
+.cards{list-style:none;margin:-48px 0 0;padding:0 12px;display:grid;gap:12px;position:relative}
+.card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r);padding:var(--s3);min-height:200px;display:grid;align-content:space-between;gap:var(--s3);text-decoration:none;box-shadow:0 18px 40px rgba(40,34,10,.1);transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 50px rgba(40,34,10,.16)}
+.card.y{background:var(--yellow);border-color:var(--yellow)}
+.card .top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.card h3{font-size:26px;line-height:1.08}
+.card .arrow{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;flex:none}
+.card .arrow .ic{width:20px;height:20px}
+.card p{margin:0;font-size:17px;line-height:1.5;color:var(--ink2)}
+.card.y p{color:#2d2400}
+.svc{list-style:none;margin:var(--s4) 0 0;padding:0;border-top:2px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:44px 1fr;gap:4px var(--s2);padding:20px 0;border-bottom:1px solid var(--line)}
+.svc i{font-style:normal;font-weight:800;font-size:15px;color:var(--muted);padding-top:5px;letter-spacing:.04em}
+.svc h3{font-size:22px}
+.svc p{grid-column:2;margin:0;color:var(--ink2);font-size:17px;line-height:1.55}
+.free{margin-top:var(--s3);background:var(--ink);color:#fff;border-radius:var(--r);padding:var(--s3);display:grid;gap:var(--s2);align-items:center}
+.free h3{font-size:28px}.free p{margin:6px 0 0;font-size:18px;max-width:60ch;color:#e4e1d8}
+
+/* projects */
+.projects{padding-bottom:var(--s5)}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 8px;margin:0;list-style:none;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.tile{position:relative;flex:0 0 84%;scroll-snap-align:center;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:#2a2c2f;color:#fff}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile::before{content:"";position:absolute;left:0;right:0;top:0;height:110px;z-index:1;background:linear-gradient(0deg,rgba(10,10,10,0),rgba(10,10,10,.45))}
+.tile .num{position:absolute;z-index:2;top:16px;left:20px;font-size:44px;font-weight:800;letter-spacing:-.05em;line-height:1}
+.tile .cap{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:110px 20px 22px;background:linear-gradient(180deg,rgba(10,10,10,0),rgba(10,10,10,.85) 60%)}
+.tile .meta{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--yellow);padding:5px 11px;border-radius:999px;margin-bottom:10px}
+.tile h3{font-size:28px;line-height:1.08;margin:0 0 6px}
+.tile p{margin:0;font-size:16px;line-height:1.45;color:#efefef}
+.hint{padding:6px 20px 0;color:var(--muted);font-size:14px;margin:0}
+.also{margin-top:var(--s3);color:var(--ink2);font-size:17px}
+.also b{color:var(--ink)}
+
+/* why */
+.why{background:var(--char);color:#fff;border-radius:28px 28px 0 0}
+.why .kicker{color:#b9b6ac}
+.why .lead{color:#d6d3c9}
+.pts{list-style:none;margin:var(--s4) 0 0;padding:0;display:grid;gap:0;border-top:1px solid #3a3c40}
+.pts li{padding:26px 0;border-bottom:1px solid #3a3c40;display:grid;gap:8px}
+.pts b{color:var(--yellow);font-size:15px;font-weight:800;letter-spacing:.1em}
+.pts h3{font-size:26px}
+.pts p{margin:0;color:#d6d3c9;font-size:17px}
+
+/* quote */
+.quote .wrap{display:grid;gap:var(--s4)}
+.quote .big{font-size:clamp(28px,4vw,38px);font-weight:800;letter-spacing:-.03em;text-decoration:none;display:inline-flex;align-items:center;gap:12px;margin-top:var(--s2);border-bottom:4px solid var(--yellow)}
+form{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r);padding:var(--s3);display:grid;gap:18px;box-shadow:0 18px 40px rgba(40,34,10,.07)}
+label{display:grid;gap:7px;font-weight:700;font-size:15px}
+input,select,textarea{font:inherit;font-weight:400;font-size:17px;padding:13px 14px;border:1.5px solid #a39e90;border-radius:var(--rs);background:#fff;color:var(--ink);min-height:54px;width:100%}
+textarea{min-height:110px;resize:vertical}
+.row{display:grid;gap:18px}
+.notice{display:none;background:#fff8e1;border:1px solid #f0dca0;color:#5c4400;padding:14px;border-radius:var(--rs);font-size:15px}
 .notice.show{display:block}
-.fine{font-size:13px;color:var(--muted);margin:0}
-.contact dl{margin:24px 0 0;display:grid;gap:18px}
-.contact dt{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
-.contact .item{display:flex;gap:14px;align-items:flex-start}
-.contact .ico{flex:none}
-.contact dd{margin:2px 0 0;font-size:20px;font-weight:600}
-.contact dd a{text-decoration:none}
-.contact dd a:hover{text-decoration:underline}
-.map-embed{border-radius:14px;border:1px solid var(--line);overflow:hidden;display:grid;background:#fff}
-.map-embed iframe{width:100%;height:320px;border:0;display:block}.map-embed .btn{margin:14px auto;justify-self:center}
-footer{background:var(--coal);color:#c5cad1;padding:44px 0 24px;font-size:15px}
+
+/* contact band */
+.contact{background:var(--yellow);padding:var(--s5) 0}
+.contact .wrap{display:grid;gap:var(--s4)}
+.contact h2{margin-bottom:var(--s3)}
+.contact .phone{display:inline-flex;align-items:center;gap:14px;font-size:clamp(34px,8vw,56px);font-weight:800;letter-spacing:-.04em;line-height:1;text-decoration:none;border-bottom:5px solid var(--ink)}
+.contact .phone .ic{width:.8em;height:.8em;stroke-width:2.4}
+.contact dl{margin:var(--s3) 0 0;display:grid;gap:18px}
+.contact dt{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#4a3d00}
+.contact dd{margin:2px 0 0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+.contact dd a{text-underline-offset:4px}
+.contact .small{font-size:15px;font-weight:500;color:#3a3000;margin-top:var(--s2)}
+.map{border-radius:var(--r);overflow:hidden;border:3px solid var(--ink);background:#fff;min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+footer{background:var(--char);color:#c9c6bc;padding:var(--s4) 0 calc(var(--s3) + 76px + env(safe-area-inset-bottom));font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;align-items:center}
 footer a{color:#fff}
-.fgrid{display:grid;gap:28px}
-.fgrid h3{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:#9aa3ad}
-.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.fgrid li a{display:inline-flex;align-items:center;gap:8px;min-height:36px;text-decoration:none}
-.fgrid li a:hover{text-decoration:underline}
-.fgrid .ic{width:16px;height:16px;color:var(--amber)}
-.fgrid p{margin:12px 0 0;max-width:34ch}
-.copy{margin-top:28px;padding-top:18px;border-top:1px solid #3a424b;font-size:13px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
-.sticky .btn{min-height:48px}
+footer img{height:38px;width:auto;background:#fff;border-radius:8px;padding:4px 8px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,246,.97);border-top:1px solid var(--line)}
+.sticky .btn{min-height:52px;padding:0 12px}
+
 @media(min-width:760px){
-.num{display:inline}
-.cta{display:flex}
-.grid.c3{grid-template-columns:repeat(3,1fr)}
-.split{grid-template-columns:1fr 1fr;gap:56px}
+body{padding-bottom:0}.sticky{display:none}footer{padding-bottom:var(--s3)}
+.wrap{width:min(1240px,100% - 64px)}
+.wide{width:min(1440px,100% - 48px)}
+.call .num{display:inline}
+details.menu{display:none}
+.hero{padding-top:var(--s3)}
+.stage{height:clamp(600px,calc(100svh - 160px),840px);display:block}
+.stage-photo{position:absolute;inset:0;aspect-ratio:auto;clip-path:polygon(0 0,58% 0,63% 72px,68% 0,100% 0,100% 100%,0 100%)}
+.stage-photo img{object-position:22% center}
+.panel-hero{position:absolute;left:0;bottom:0;width:min(700px,50%);padding:var(--s4) var(--s4) 0 0;margin:0}
+.hero h1{font-size:clamp(46px,5.1vw,80px);text-wrap:wrap}
+.cta{display:flex;flex-wrap:wrap}
+.chips{position:absolute;z-index:2;top:24px;left:24px;margin:0}
+.go{display:grid;place-items:center;position:absolute;left:100%;bottom:0;width:96px;height:96px;background:var(--yellow);color:var(--ink);transition:transform .3s cubic-bezier(.2,.7,.2,1);z-index:2}
+.go:hover{transform:translateY(6px)}
+.go .ic{width:38px;height:38px;transform:rotate(90deg);stroke-width:2.4}
+.facts ol{grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.facts li{grid-template-columns:1fr;gap:12px;padding:30px 24px 32px 0;border-bottom:0;border-right:1px solid var(--line);margin-right:24px;align-items:start;min-width:0}
+.facts li:last-child{border-right:0;margin-right:0}
+.facts b{font-size:clamp(60px,7.6vw,112px);white-space:nowrap}
+.facts span{font-size:16px;max-width:24ch}
+section{padding:var(--s6) 0}
+.head{grid-template-columns:5fr 6fr;gap:var(--s5);align-items:end;margin-bottom:var(--s5)}
+.services{padding-bottom:0}
+.strip{height:420px;gap:10px}
+.cards{grid-template-columns:repeat(4,1fr);margin-top:-120px;padding:0 24px;gap:16px}
+.card{min-height:300px;padding:var(--s4) 28px 28px}
+.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:var(--s5);margin-top:var(--s5)}
+.svc li{grid-template-columns:52px 1fr}
+.free{grid-template-columns:1fr auto;padding:var(--s4)}
+.projects{padding-bottom:var(--s6)}
+.rail{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:min(46vw,560px);gap:20px;overflow:visible;padding:0;width:min(1440px,100% - 48px);margin-inline:auto}
+.tile{flex:none;aspect-ratio:auto;grid-column:span 6}
+.tile.w7{grid-column:span 7}.tile.w5{grid-column:span 5}
+.tile::before{height:140px}
+.tile .num{top:24px;left:28px;font-size:64px}
+.tile .cap{padding:150px 32px 30px}
+.tile h3{font-size:clamp(28px,3vw,44px)}
+.tile p{font-size:17px;max-width:44ch}
+.tile .cap{transform:translateY(0)}
+.tile img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img,.tile:focus-within img{transform:scale(1.05)}
+.tile p{max-height:0;opacity:0;overflow:hidden;transition:max-height .4s,opacity .4s,margin .4s}
+.tile:hover p,.tile:focus-within p,.tile:focus p{max-height:90px;opacity:1}
+.hint{display:none}
+.why .split{display:grid;grid-template-columns:5fr 7fr;gap:var(--s5)}
+.pts{margin-top:0;grid-template-columns:1fr 1fr;column-gap:var(--s4);border-top:0}
+.pts li{border-top:1px solid #3a3c40;border-bottom:0;padding:28px 0 36px}
+.quote .wrap{grid-template-columns:5fr 6fr;gap:var(--s5);align-items:start}
 .row{grid-template-columns:1fr 1fr}
-.hero .wrap{padding:104px 0 112px}
-.hero::before{background:linear-gradient(90deg,rgba(20,24,29,.93) 0,rgba(20,24,29,.72) 50%,rgba(20,24,29,.15) 100%)}
-.hero picture img{object-position:center}
-.fgrid{grid-template-columns:1.4fr 1fr 1.2fr 1fr}
-body{padding-bottom:0}
-.sticky{display:none}
-section{padding:80px 0}
+form{padding:var(--s4)}
+.contact{padding:var(--s6) 0}
+.contact .wrap{grid-template-columns:1fr 1fr;gap:var(--s5);align-items:stretch}
+.map,.map iframe{min-height:420px}
 }
-@media(min-width:1000px){nav{display:flex}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media(min-width:1000px){nav.main{display:flex;gap:4px}}
+
+/* motion: only when JS is on and motion is allowed; content stays visible otherwise */
+.btn:active{transform:scale(.97)}
+header.top .wrap{transition:min-height .3s cubic-bezier(.2,.7,.2,1)}
+.logo img{transition:height .3s cubic-bezier(.2,.7,.2,1)}
+header.top.scrolled{box-shadow:0 8px 24px rgba(30,25,10,.08)}
+header.top.scrolled .wrap{min-height:58px}
+header.top.scrolled .logo img{height:36px}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes zoomout{from{transform:scale(1.12)}to{transform:scale(1)}}
+@keyframes reveal{from{clip-path:inset(0 0 100% 0 round 20px)}to{clip-path:inset(0 0 0 0 round 20px)}}
+.js .hero .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i,0) * 110ms + 80ms)}
+.js .hero h1 mark{box-shadow:none;background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/0 .28em no-repeat;animation:mark .9s .75s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes mark{to{background-size:100% .28em}}
+.js .stage-photo{animation:fade 1s .1s ease both}
+.js .stage-photo img{animation:zoomout 2s .1s cubic-bezier(.2,.7,.2,1) both}
+.js .go{animation:rise .8s 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0) * 90ms);will-change:opacity,transform}
+.js .rv.in{opacity:1;transform:none;will-change:auto}
+@media(prefers-reduced-motion:reduce){.btn:active{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.tile img,.tile p,.tile .cap{transition:none}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
 <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-<symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-<symbol id="i-build" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M9 11h.01M15 11h.01"/></symbol>
-<symbol id="i-reno" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/></symbol>
-<symbol id="i-brush" viewBox="0 0 24 24"><path d="M3 3h14v6H3zM17 6h3v6h-9v3M11 15v6h2v-6"/></symbol>
-<symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7zM2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
-<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
-<symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 22v-7M7 15h10l-3-4h2l-4-6-4 6h2z"/></symbol>
-<symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></symbol>
-<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
-<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
 </defs></svg>
 <div class="demo">Dizaino pavyzdys – paruošė Vaidas Bagdonas (<a href="https://vaidasbagdonas.com">vaidasbagdonas.com</a>)</div>
 
 <header class="top">
 <div class="wrap">
-<a class="logo" href="#top" aria-label="Rimosta"><img src="rimosta_logo.png" width="188" height="90" alt="Rimosta"></a>
-<nav aria-label="Pagrindinis">
-<a href="#paslaugos">Paslaugos</a><a href="#projektai">Projektai</a><a href="#apie">Apie mus</a><a href="#pasiulymas">Sąmata</a><a href="#kontaktai">Kontaktai</a>
+<a class="logo" href="#top" aria-label="Rimosta – į pradžią"><img src="rimosta_logo.png" width="188" height="90" alt="Rimosta"></a>
+<nav class="main" aria-label="Pagrindinis">
+<a href="#paslaugos">Paslaugos</a><a href="#projektai">Projektai</a><a href="#kodel">Apie mus</a><a href="#samata">Sąmata</a><a href="#kontaktai">Kontaktai</a>
 </nav>
-<a class="btn btn-dark" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti<span class="num">&nbsp;+370&nbsp;685&nbsp;54584</span></a>
+<a class="btn btn-y call" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti<span class="num">+370&nbsp;685&nbsp;54584</span></a>
+<details class="menu">
+<summary aria-label="Meniu"><svg class="ic open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="ic close" aria-hidden="true"><use href="#i-x"/></svg></summary>
+<div class="panel"><a href="#paslaugos">Paslaugos</a><a href="#projektai">Projektai</a><a href="#kodel">Apie mus</a><a href="#samata">Gauti sąmatą</a><a href="#kontaktai">Kontaktai</a></div>
+</details>
 </div>
 </header>
 
 <main id="top">
 <section class="hero">
-<picture><source type="image/webp" srcset="hero-800.webp 800w, hero-1600.webp 1600w" sizes="100vw"><img src="hero-1600.webp" width="1600" height="900" alt="Gelžbetoninio karkaso statybos objektas su pastoliais" fetchpriority="high" decoding="async"></picture>
-<div class="wrap">
-<div>
-<p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Vilnius · Dariaus ir Girėno&nbsp;g.&nbsp;20</p>
-<h1>Kokybiška, prieinama ir profesionali statyba</h1>
-<p class="lead">Statybos ir remonto darbai, pastatų rekonstrukcija ir renovacija. Nemokama konsultacija – padėsime išsiaiškinti, nuo ko pradėti.</p>
-<div class="cta">
-<a class="btn btn-primary" href="#pasiulymas"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Gauti pasiūlymą / sąmatą</a>
-<a class="btn btn-ghost" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti +370&nbsp;685&nbsp;54584</a>
+<div class="wide">
+<div class="stage">
+<figure class="stage-photo"><picture><source media="(max-width:759px)" srcset="hero-m.webp" width="900" height="619"><img src="hero-2400.webp" srcset="hero-1400.webp 1400w, hero-2400.webp 2400w" sizes="(min-width:1000px) 1400px, 100vw" width="2400" height="964" alt="Gelžbetoninių daugiabučių statyba pušyne" fetchpriority="high" decoding="async"></picture></figure>
+<ul class="chips rise" style="--i:4"><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Nuo 2009&nbsp;m.</li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Atestuota įmonė</li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Nemokama konsultacija</li></ul>
+<div class="panel-hero">
+<a class="go" href="#paslaugos" aria-label="Žemyn į paslaugas"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+<h1 class="rise" style="--i:0">Kokybiška, prieinama ir profesionali <mark>statyba</mark></h1>
+<p class="lead rise" style="--i:1">Statybos ir remonto darbai, pastatų rekonstrukcija ir renovacija. Nemokama konsultacija – padėsime išsiaiškinti, nuo ko pradėti.</p>
+<div class="cta rise" style="--i:2">
+<a class="btn btn-y" href="#samata"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Gauti sąmatą</a>
+<a class="btn btn-o" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti +370&nbsp;685&nbsp;54584</a>
 </div>
-<ul class="badges">
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Įmonė nuo 2009&nbsp;m.</li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Darbų sąmata</li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Nemokama konsultacija</li>
+</div>
+</div>
+</div>
+</section>
+
+<section class="facts" style="padding-bottom:0" aria-label="Įmonė skaičiais">
+<div class="wrap">
+<ol>
+<li><b data-count="2009">2009</b><span>metais įkurta UAB „Rimosta“ – statybos ir remonto darbai visoje Lietuvoje</span></li>
+<li><b data-count="2012">2012</b><span>LR ŽŪM Garbės ženklas už Krikštonių komplekso rekonstrukciją ir statybą</span></li>
+<li><b data-count="2014">2014</b><span>Padėkos raštas už aukštą kvalifikaciją ir profesinį meistriškumą</span></li>
+<li><b data-count="9" data-suffix="&lt;small&gt;&nbsp;mėn.&lt;/small&gt;">9<small>&nbsp;mėn.</small></b><span>per tiek atlikti Melekonių paukštyno statybos darbai</span></li>
+</ol>
+</div>
+</section>
+
+<section id="paslaugos" class="services">
+<div class="wrap">
+<div class="head">
+<div><p class="kicker">Paslaugos</p><h2>Visa statyba – iš vienų rankų</h2></div>
+<p class="lead">Atliekame statybos planavimą, ruošiame sąmatą bei vykdome ir kuruojame darbus pagal parengtą projektą.</p>
+</div>
+</div>
+<div class="wide">
+<div class="strip" aria-hidden="true"><img src="strip-1.webp" width="900" height="506" loading="lazy" decoding="async" alt=""><img src="strip-2.webp" width="900" height="506" loading="lazy" decoding="async" alt=""><img src="strip-3.webp" width="900" height="675" loading="lazy" decoding="async" alt=""></div>
+<ul class="cards">
+<li><a class="card y" href="#samata"><div class="top"><h3>Statyba</h3><span class="arrow"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></div><p>Įvairios paskirties pastatų statyba. Didelė patirtis tiek asmeninių, tiek komercinių projektų srityje.</p></a></li>
+<li><a class="card" href="#samata"><div class="top"><h3>Rekonstrukcija ir renovacija</h3><span class="arrow"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></div><p>Daugybė atliktų projektų, ypač stipri patirtis komercinių kompleksų rekonstrukcijose.</p></a></li>
+<li><a class="card" href="#samata"><div class="top"><h3>Apdailos darbai</h3><span class="arrow"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></div><p>Apdailos darbai butams, namams ir įvairiems objektams. Padedame pasirinkti medžiagas.</p></a></li>
+<li><a class="card" href="#samata"><div class="top"><h3>Fasadų šiltinimas ir apdaila</h3><span class="arrow"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></div><p>Padedame įsirengti šiltinimą ir atliekame apdailą po šiltinimo darbų.</p></a></li>
 </ul>
 </div>
-</div>
-</section>
-
-<section id="paslaugos">
 <div class="wrap">
-<h2>Paslaugos</h2>
-<p class="sub">Atliekame statybos planavimą, ruošiame sąmatą bei vykdome ir kuruojame darbus pagal parengtą projektą.</p>
-<div class="grid c3">
-<article class="card main"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-build"/></svg></div><h3>Statyba</h3><p>Įvairios paskirties pastatų statyba. Didelė patirtis tiek asmeninių, tiek komercinių projektų srityje.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-reno"/></svg></div><h3>Rekonstrukcija ir renovacija</h3><p>Daugybė atliktų rekonstrukcijos ir renovacijos projektų, ypač stipri patirtis komercinių kompleksų rekonstrukcijose.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-brush"/></svg></div><h3>Apdailos darbai</h3><p>Apdailos darbai butams, namams bei įvairiems objektams. Padedame pasirinkti medžiagas.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-layers"/></svg></div><h3>Fasadų šiltinimas ir apdaila</h3><p>Padedame įsirengti šiltinimą ir atliekame apdailą po šiltinimo darbų.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-bolt"/></svg></div><h3>Elektros montavimas</h3><p>Suplanuojame ir sumontuojame elektros tinklus namui ar butui.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-tree"/></svg></div><h3>Gerbūvio tvarkymas</h3><p>Aplinkos sutvarkymas ir išvalymas.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-box"/></svg></div><h3>Medžiagų tiekimas</h3><p>Rekomenduojame tiekimo šaltinius ir padedame pasirinkti geriausią kainos ir kokybės santykį.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-eye"/></svg></div><h3>Darbų techninė priežiūra</h3><p>Prižiūrime techninę darbų atlikimo kokybę ir užtikriname geriausius rezultatus.</p></article>
-<article class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-chat"/></svg></div><h3>Nemokama konsultacija</h3><p>Norite pradėti buto, namo ar pramoninio pastato statybas ar rekonstrukciją? Padėsime atsakyti į jus dominančius klausimus.</p></article>
+<ol class="svc">
+<li><i>05</i><h3>Elektros montavimas</h3><p>Suplanuojame ir sumontuojame elektros tinklus namui ar butui.</p></li>
+<li><i>06</i><h3>Gerbūvio tvarkymas</h3><p>Aplinkos sutvarkymas ir išvalymas.</p></li>
+<li><i>07</i><h3>Medžiagų tiekimas</h3><p>Rekomenduojame tiekimo šaltinius ir padedame pasirinkti geriausią kainos ir kokybės santykį.</p></li>
+<li><i>08</i><h3>Darbų techninė priežiūra</h3><p>Prižiūrime techninę darbų atlikimo kokybę ir užtikriname geriausius rezultatus.</p></li>
+</ol>
+<div class="free">
+<div><h3>Nemokama konsultacija</h3><p>Norite pradėti buto, namo ar pramoninio pastato statybas ar rekonstrukciją, bet nežinote, nuo ko pradėti? Padėsime atsakyti į jus dominančius klausimus.</p></div>
+<a class="btn btn-y" href="#samata">Kreiptis<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
 </div>
 </section>
 
-<section id="projektai" class="alt">
+<section id="projektai" class="projects">
 <div class="wrap">
-<h2>Atlikti projektai</h2>
-<p class="sub">Keli objektai iš mūsų darbų – nuo gamybos ir prekybos pastatų iki gyvenamųjų namų.</p>
-<div class="grid c3">
-<article class="proj"><img src="p-hipodromas.webp" width="720" height="405" loading="lazy" decoding="async" alt="Kauno hipodromo gelžbetoninės kolonos statybvietėje"><div><span class="tag">2014&nbsp;m.</span><h3>Kauno hipodromas</h3><p>Komercinis ir pramoninis projektas.</p></div></article>
-<article class="proj"><img src="p-maxima.webp" width="720" height="405" loading="lazy" decoding="async" alt="Lentvario Maximos statybos objektas"><div><span class="tag">2016&nbsp;m.</span><h3>Lentvario „Maxima“</h3><p>Gelžbetoninių ir metalinių konstrukcijų montavimo darbai.</p></div></article>
-<article class="proj"><img src="p-turniskes.webp" width="720" height="405" loading="lazy" decoding="async" alt="Turniškių kotedžų statybos"><div><span class="tag">Gelžbetonio statyba</span><h3>Turniškių kotedžai</h3><p>Kotedžų gelžbetoninių pastatų statybos darbai.</p></div></article>
-<article class="proj"><img src="p-ariogala.webp" width="720" height="405" loading="lazy" decoding="async" alt="Ariogalos fabriko grindų armatūra"><div><span class="tag">Gamybos pastatas</span><h3>Ariogalos fabrikas</h3><p>Ariogalos kombinuotų pašarų fabriko statybos darbai.</p></div></article>
-<article class="proj"><img src="p-lazdijai.webp" width="720" height="405" loading="lazy" decoding="async" alt="Lazdijų inkubatoriaus statybos darbai"><div><span class="tag">Gamybos pastatas</span><h3>Lazdijų inkubatorius</h3><p>Lazdijų inkubatoriaus statybos darbai.</p></div></article>
-<article class="proj"><img src="p-butas.webp" width="720" height="405" loading="lazy" decoding="async" alt="Suremontuoto ir renovuoto buto laiptai"><div><span class="tag">Remontas</span><h3>Buto remontas Kaune</h3><p>Suremontuotas ir renovuotas butas Kaune.</p></div></article>
+<div class="head">
+<div><p class="kicker">Projektai</p><h2>Atlikti objektai</h2></div>
+<p class="lead">Nuo gamybos ir prekybos pastatų iki gyvenamųjų namų ir butų remonto.</p>
 </div>
 </div>
+<ul class="rail">
+<li class="tile w7" tabindex="0"><img src="hipodromas.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Kauno hipodromo gelžbetoninės kolonos"><span class="num">01</span><div class="cap"><span class="meta">2014&nbsp;m. · Komercinis</span><h3>Kauno hipodromas</h3><p>Komercinis ir pramoninis projektas.</p></div></li>
+<li class="tile w5" tabindex="0"><img src="maxima.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Lentvario Maximos statybvietė su kolonomis"><span class="num">02</span><div class="cap"><span class="meta">2016&nbsp;m. · Komercinis</span><h3>Lentvario „Maxima“</h3><p>Gelžbetoninių ir metalinių konstrukcijų montavimo darbai.</p></div></li>
+<li class="tile w5" tabindex="0"><img src="turniskes.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Turniškių kotedžų gelžbetoniniai pastatai"><span class="num">03</span><div class="cap"><span class="meta">Gyvenamieji</span><h3>Turniškių kotedžai</h3><p>Kotedžų gelžbetoninių pastatų statybos darbai.</p></div></li>
+<li class="tile w7" tabindex="0"><img src="antagaluone.webp" width="1400" height="933" loading="lazy" decoding="async" alt="Krikštonių komplekso fermos"><span class="num">04</span><div class="cap"><span class="meta">Rekonstrukcija · apdovanota 2012&nbsp;m.</span><h3>Krikštonių kompleksas</h3><p>Kiaulių komplekso rekonstrukcija į paukštyną – 6 ha sklype įrengta 7 fermos.</p></div></li>
+<li class="tile w7" tabindex="0"><img src="melekoniai.webp" width="1400" height="788" loading="lazy" decoding="async" alt="Melekonių paukštyno pastatas"><span class="num">05</span><div class="cap"><span class="meta">Gamybos pastatas</span><h3>Melekonių paukštynas</h3><p>Statybos darbai atlikti per 9 mėnesius.</p></div></li>
+<li class="tile w5" tabindex="0"><img src="butas.webp" width="1400" height="787" loading="lazy" decoding="async" alt="Suremontuoto buto laiptai"><span class="num">06</span><div class="cap"><span class="meta">Remontas</span><h3>Buto remontas Kaune</h3><p>Suremontuotas ir renovuotas butas.</p></div></li>
+</ul>
+<div class="wrap"><p class="hint">Braukite į šoną – daugiau objektų →</p>
+<p class="also"><b>Taip pat:</b> Ariogalos kombinuotų pašarų fabrikas, Lazdijų inkubatorius, banko patalpų pritaikymas kavinei Gedimino pr. Vilniuje.</p></div>
 </section>
 
-<section id="apie" class="why">
+<section id="kodel" class="why on-dark">
 <div class="wrap split">
 <div>
-<h2>Apie UAB „Rimosta“</h2>
-<p class="sub">Kliento poreikių ištyrimas, profesionalių sprendimų parinkimas ir jų realizavimas. Pagrindinė įmonės veikla – statybos ir remonto darbai visoje Lietuvoje.</p>
-<ul class="plain">
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Įsteigta 2009&nbsp;m.</strong> – statybos ir remonto darbai Lietuvos teritorijoje</span></li>
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Atestuota</strong> bendriesiems statybos darbams, įvairių statinių grupėms ir ypatingoms kategorijoms</span></li>
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Sąmata</strong> pagal jūsų norus ir projektą, patarimai, kur įsigyti medžiagų kokybiškai ir pigiai</span></li>
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Laikomės darbų plano</strong> ir laiku pranešame apie bet kokius pokyčius darbų eigoje</span></li>
-</ul>
+<p class="kicker">Kodėl Rimosta</p>
+<h2>Aiški sąmata. Laikomės plano.</h2>
+<p class="lead" style="margin-top:20px">Kliento poreikių ištyrimas, profesionalių sprendimų parinkimas ir jų realizavimas.</p>
 </div>
-<div>
-<h2>Įvertinimai</h2>
-<p class="sub">Už atliktus darbus įmonė yra gavusi valstybinius įvertinimus.</p>
-<ul class="plain">
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>2012&nbsp;m.</strong> – LR ŽŪM Garbės ženklas už Krikštonių komplekso rekonstrukciją ir statybą</span></li>
-<li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><strong>2014&nbsp;m.</strong> – padėkos raštas už aukštą kvalifikaciją ir profesinį meistriškumą vykdant mėsinių viščiukų auginimo komplekso projektavimo, statybos ir įrengimo darbus</span></li>
-</ul>
-</div>
+<ol class="pts">
+<li><b>01</b><h3>Priimtinos kainos</h3><p>Pagal jūsų norus ir projektą sudarome darbų sąmatą ir patariame, kur įsigyti medžiagų kokybiškai ir pigiai.</p></li>
+<li><b>02</b><h3>Kokybiškai ir laiku</h3><p>Visuomet laikomės sudaryto darbų plano ir laiku pranešame apie bet kokius pokyčius darbų eigoje.</p></li>
+<li><b>03</b><h3>Darbų atlikimo garantija</h3><p>Per ilgus darbo metus pelnėme klientų pasitikėjimą ir galime garantuoti darbų atlikimą bei pilną išpildymą.</p></li>
+<li><b>04</b><h3>Aukšti kokybės standartai</h3><p>Kokybei visuomet teikiame aukščiausią prioritetą. Įmonė atestuota bendriesiems statybos darbams.</p></li>
+</ol>
 </div>
 </section>
 
-<section id="pasiulymas" class="alt">
-<div class="wrap split">
+<section id="samata" class="quote">
+<div class="wrap">
 <div>
-<h2>Gauti pasiūlymą / sąmatą</h2>
-<p class="sub">Trumpai aprašykite, ką norite pastatyti ar suremontuoti – susisieksime ir pasikalbėsime. Galite ir paskambinti: <a href="tel:+37068554584"><strong>+370&nbsp;685&nbsp;54584</strong></a>.</p>
-<p class="fine">Nežinote, nuo ko pradėti? Konsultacija nemokama.</p>
+<p class="kicker">Sąmata</p>
+<h2>Gaukite pasiūlymą ir sąmatą</h2>
+<p class="lead" style="margin-top:20px">Trumpai aprašykite, ką norite pastatyti ar suremontuoti – susisieksime. Arba paskambinkite iškart:</p>
+<a class="big" href="tel:+37068554584">+370&nbsp;685&nbsp;54584</a>
 </div>
 <form id="quote" novalidate>
 <div class="row">
@@ -243,65 +388,63 @@ section{padding:80px 0}
 <label>Telefonas<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+370" required></label>
 </div>
 <label>Kas jus domina?
-<select name="type">
-<option>Statyba</option>
-<option>Rekonstrukcija ar renovacija</option>
-<option>Apdailos darbai</option>
-<option>Fasadų šiltinimas</option>
-<option>Elektros montavimas</option>
-<option>Gerbūvio tvarkymas</option>
-<option>Kita / nežinau</option>
-</select></label>
+<select name="type"><option>Statyba</option><option>Rekonstrukcija ar renovacija</option><option>Apdailos darbai</option><option>Fasadų šiltinimas</option><option>Elektros montavimas</option><option>Gerbūvio tvarkymas</option><option>Kita / nežinau</option></select></label>
 <label>Trumpai apie objektą<textarea name="note"></textarea></label>
-<button class="btn btn-primary" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Gauti pasiūlymą</button>
+<button class="btn btn-y" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Gauti pasiūlymą</button>
 <div class="notice" id="notice" role="status">Demo: forma šiame pavyzdyje nesiunčiama. Realioje svetainėje užklausa ateitų jums el. paštu.</div>
 </form>
 </div>
 </section>
 
-<section id="kontaktai" class="contact">
-<div class="wrap split">
+<section id="kontaktai" class="contact" style="padding-bottom:var(--s5)">
+<div class="wrap">
 <div>
-<h2>Kontaktai</h2>
+<h2>Susisiekite</h2>
+<a class="phone" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>+370&nbsp;685&nbsp;54584</a>
 <dl>
-<div class="item"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><div><dt>Buveinės adresas</dt><dd>Dariaus ir Girėno&nbsp;g.&nbsp;20, Vilnius 02169</dd></div></div>
-<div class="item"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><dt>Telefonas</dt><dd><a href="tel:+37068554584">+370&nbsp;685&nbsp;54584</a></dd></div></div>
-<div class="item"><span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><div><dt>El. paštas</dt><dd><a href="mailto:rimas@rimosta.lt">rimas@rimosta.lt</a></dd></div></div>
+<div><dt>El. paštas</dt><dd><a href="mailto:rimas@rimosta.lt">rimas@rimosta.lt</a></dd></div>
+<div><dt>Buveinės adresas</dt><dd>Dariaus ir Girėno&nbsp;g.&nbsp;20, Vilnius 02169</dd></div>
 </dl>
+<p class="small">UAB „Rimosta“ · įmonės kodas 302316808 · PVM kodas LT100004603714</p>
 </div>
-<div class="map-embed">
-<iframe title="UAB „Rimosta“ žemėlapyje – Dariaus ir Girėno g. 20, Vilnius" src="https://maps.google.com/maps?q=Dariaus+ir+Gir%C4%97no+g.+20%2C+Vilnius&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-<a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Dariaus+ir+Gir%C4%97no+g.+20%2C+Vilnius" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg>Atidaryti žemėlapyje</a>
-</div>
+<div class="map"><iframe title="Rimosta žemėlapyje – Dariaus ir Girėno g. 20, Vilnius" src="https://maps.google.com/maps?q=Dariaus+ir+Gir%C4%97no+g.+20%2C+Vilnius&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
 </div>
 </section>
 </main>
 
 <footer>
 <div class="wrap">
-<div class="fgrid">
-<div><strong style="color:#fff;font-size:18px">UAB „Rimosta“</strong><p>Statybos ir remonto darbai, rekonstrukcija ir renovacija.</p></div>
-<div><h3>Nuorodos</h3><ul><li><a href="#paslaugos">Paslaugos</a></li><li><a href="#projektai">Projektai</a></li><li><a href="#apie">Apie mus</a></li><li><a href="#kontaktai">Kontaktai</a></li></ul></div>
-<div><h3>Kontaktai</h3><ul>
-<li><a href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>+370&nbsp;685&nbsp;54584</a></li>
-<li><a href="mailto:rimas@rimosta.lt"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>rimas@rimosta.lt</a></li>
-<li><a href="#kontaktai"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Dariaus ir Girėno&nbsp;g.&nbsp;20, Vilnius</a></li></ul></div>
-<div><h3>Rekvizitai</h3><p style="margin-top:0">Įmonės kodas 302316808<br>PVM kodas LT100004603714</p></div>
-</div>
-<div class="copy"><span>© 2026 UAB „Rimosta“</span><span>Dizaino pavyzdys – paruošė <a href="https://vaidasbagdonas.com">Vaidas Bagdonas</a>. Ne galutinė svetainė.</span></div>
+<img src="rimosta_logo.png" width="188" height="90" alt="Rimosta" loading="lazy">
+<span>© 2026 UAB „Rimosta“</span>
+<span>Dizaino pavyzdys – paruošė <a href="https://vaidasbagdonas.com">Vaidas Bagdonas</a>. Ne galutinė svetainė.</span>
 </div>
 </footer>
 
 <div class="sticky">
-<a class="btn btn-ghost" style="color:var(--ink);border-color:var(--ink)" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti</a>
-<a class="btn btn-primary" href="#pasiulymas"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Sąmata</a>
+<a class="btn btn-o" href="tel:+37068554584"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Skambinti</a>
+<a class="btn btn-y" href="#samata"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Gauti sąmatą</a>
 </div>
 
 <script>
 document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();
 var n=document.getElementById('notice');n.classList.add('show');n.scrollIntoView({block:'nearest'})});
-(function(){var links=[].slice.call(document.querySelectorAll('nav a'));if(!('IntersectionObserver' in window))return;
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('href')=='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+(function(){var root=document.documentElement;if(root.className!=="js"){return}
+var hdr=document.querySelector("header.top");
+var sent=document.createElement("div");sent.style.cssText="position:absolute;top:0;left:0;width:1px;height:90px;pointer-events:none";document.body.prepend(sent);
+if("IntersectionObserver" in window){
+new IntersectionObserver(function(e){hdr.classList.toggle("scrolled",!e[0].isIntersecting)}).observe(sent);
+var sets=[".head>*",".facts li",".cards li",".svc li",".free",".pts li",".quote .wrap>*",".contact .wrap>*",".also"];
+if(matchMedia("(min-width:760px)").matches)sets.push(".tile");
+sets.forEach(function(sel){var prev=null,i=0;[].forEach.call(document.querySelectorAll(sel),function(el){var p=el.parentNode;if(p!==prev){i=0;prev=p}el.classList.add("rv");el.style.setProperty("--d",Math.min(i%4,3));i++})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+[].forEach.call(document.querySelectorAll(".rv"),function(el){io.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,end=+el.dataset.count,suf=el.dataset.suffix||"",start=end>100?end-45:0,t0=performance.now(),d=1400;
+(function f(t){var k=Math.min(1,(t-t0)/d),v=Math.round(start+(end-start)*(1-Math.pow(1-k,3)));el.innerHTML=v+suf;if(k<1)requestAnimationFrame(f)})(t0)})},{threshold:.6});
+[].forEach.call(document.querySelectorAll("[data-count]"),function(el){co.observe(el)});
+}})();
+(function(){var m=document.querySelector('details.menu');if(m)m.addEventListener('click',function(e){if(e.target.closest('.panel a'))m.removeAttribute('open')});
+var links=[].slice.call(document.querySelectorAll('nav.main a'));if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('href')=='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('.hero,.facts').forEach(function(t){io.observe(t)});
 links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));t&&io.observe(t)})})();
 </script>
 </body>
