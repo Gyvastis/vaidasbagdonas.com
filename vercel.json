@@ -131,6 +131,11 @@
       "source": "/demo/runmis",
       "destination": "/demo/runmis/",
       "permanent": false
+    },
+    {
+      "source": "/demo/salgesta",
+      "destination": "/demo/salgesta/",
+      "permanent": false
     }
   ]
 }
