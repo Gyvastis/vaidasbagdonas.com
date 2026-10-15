@@ -3,6 +3,24 @@ const PIXEL_ID = '29054931437435029'; // Meta Pixel ID; empty = no banner, no tr
 const MAILTO = 'info@vaidasbagdonas.com';
 const ENDPOINT = '/api/lead';
 
+const TEXTS = {
+  lt: {
+    consent: 'Pažymėkite sutikimą dėl duomenų panaudojimo.',
+    sending: 'Siunčiama…',
+    invalid: 'Patikrinkite laukus: reikia vardo, telefono ar el. pašto, žinutės ir sutikimo.',
+    thanks: 'Ačiū, užklausa gauta! Atsakysiu per 24 val. (paprastai greičiau).',
+    failed: 'Nepavyko išsiųsti. Atidaromas el. laiškas.',
+  },
+  en: {
+    consent: 'Please tick the consent box.',
+    sending: 'Sending…',
+    invalid: 'Please check the fields: name, phone or email, message and consent are required.',
+    thanks: 'Thanks, your enquiry was received! I will reply within 24 hours (usually sooner).',
+    failed: 'Could not send. Opening your email app.',
+  },
+};
+const TEXT = TEXTS[document.documentElement.lang] || TEXTS.lt;
+
 const CONSENT_KEY = 'vb-consent';
 const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'];
 
@@ -69,10 +87,10 @@ async function submitLead(event) {
   const data = Object.fromEntries(new FormData(form));
   data.consent = form.elements.consent.checked;
   if (data.botcheck) return;
-  if (!data.consent) { setStatus('Pažymėkite sutikimą dėl duomenų panaudojimo.', true); return; }
+  if (!data.consent) { setStatus(TEXT.consent, true); return; }
 
   button.disabled = true;
-  setStatus('Siunčiama…');
+  setStatus(TEXT.sending);
   try {
     const response = await fetch(ENDPOINT, {
       method: 'POST',
@@ -80,14 +98,14 @@ async function submitLead(event) {
       body: JSON.stringify(data),
     });
     const result = await response.json().catch(() => ({}));
-    if (response.status === 400 && result.error) { setStatus('Patikrinkite laukus: reikia vardo, telefono ar el. pašto, žinutės ir sutikimo.', true); return; }
+    if (response.status === 400 && result.error) { setStatus(TEXT.invalid, true); return; }
     if (!response.ok || !result.ok) throw new Error(response.status);
     trackLead();
     form.reset();
     captureUtm();
-    setStatus('Ačiū, užklausa gauta! Atsakysiu per 24 val. (paprastai greičiau).');
+    setStatus(TEXT.thanks);
   } catch {
-    setStatus('Nepavyko išsiųsti. Atidaromas el. laiškas.', true);
+    setStatus(TEXT.failed, true);
     mailtoFallback(data);
   } finally {
     button.disabled = false;
