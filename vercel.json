@@ -136,6 +136,11 @@
       "source": "/demo/salgesta",
       "destination": "/demo/salgesta/",
       "permanent": false
+    },
+    {
+      "source": "/demo/vilniusdental",
+      "destination": "/demo/vilniusdental/",
+      "permanent": false
     }
   ]
 }
