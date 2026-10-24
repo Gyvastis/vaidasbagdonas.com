@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="facebook-domain-verification" content="61jacdck1mv2yq6lway0d3xmxh2ilk">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHP2Shell: ką daryti dėl PHP pažeidžiamumo – Vaidas Bagdonas</title>
+<meta name="description" content="CVE-2026-109618 ir CVE-2026-109619: kam tai aktualu, kaip patikrinti PHP versiją ir ką daryti. Faktai su pirminių šaltinių nuorodomis, atnaujinta 2026-10-24.">
+<meta name="theme-color" content="#0d3b2e">
+<link rel="canonical" href="https://vaidasbagdonas.com/php2shell/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="lt_LT">
+<meta property="og:site_name" content="Vaidas Bagdonas">
+<meta property="og:url" content="https://vaidasbagdonas.com/php2shell/">
+<meta property="og:title" content="PHP2Shell: ką daryti dėl PHP pažeidžiamumo">
+<meta property="og:description" content="Kam aktualu, kaip patikrinti PHP versiją ir ką daryti. Atnaujinta 2026-10-24.">
+<meta property="og:image" content="https://vaidasbagdonas.com/img/og-offer.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PHP2Shell – Vaidas Bagdonas">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d3b2e'/><text x='50%' y='58%' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='900' font-size='30' fill='%23c8ff3d'>VB</text></svg>">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preload" href="/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/jakarta-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=9">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"PHP2Shell: ką daryti dėl PHP pažeidžiamumo","datePublished":"2026-10-24","dateModified":"2026-10-24","inLanguage":"lt","author":{"@type":"Person","name":"Vaidas Bagdonas","url":"https://vaidasbagdonas.com/"},"mainEntityOfPage":"https://vaidasbagdonas.com/php2shell/"}
+</script>
+</head>
+<body class="offer-page">
+<a class="skip" href="#turinys">Eiti prie turinio</a>
+
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="/">Vaidas Bagdonas</a>
+    <nav class="nav-links" aria-label="Pagrindinė">
+      <a href="/#kainos">Kainos</a>
+      <a href="/svetaines/">Svetainės nuo 120 €</a>
+      <a class="lang" href="/en/" hreflang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<section class="dark hero" style="padding-bottom:48px">
+  <div class="container">
+    <span class="badge-48">Atnaujinta 2026-10-24</span>
+    <h1 style="font-size:clamp(34px,7vw,64px)">PHP2Shell: ką tai reiškia <span class="hit">ir ką daryti</span></h1>
+    <p class="sub">Dvi PHP branduolio klaidos, ištaisytos 2026-10-21. Čia &ndash; tik patikrinti faktai, kaip sužinoti savo PHP versiją ir ką daryti toliau.</p>
+  </div>
+</section>
+
+<section class="section" id="turinys">
+  <div class="container svc-prices">
+    <h2>Kas tai <span class="hit">yra</span></h2>
+    <p>PHP2Shell &ndash; pavadinimas, kuriuo vadinamos dvi PHP branduolio (angl. core) klaidos: CVE-2026-109618 ir CVE-2026-109619. Klaida pačiame PHP, todėl gali būti aktuali ir tada, kai svetainės kodas tvarkingas &ndash; WordPress, Magento, Laravel, Symfony ar savarankiškai rašyta svetainė. Šaltiniai: <a href="https://sansec.io/research/php2shell" rel="noopener">Sansec, PHP2Shell</a>, <a href="https://www.f5.com/labs/articles/php2shell-exploitation-attempts-observed" rel="noopener">F5 Labs, stebėti išnaudojimo bandymai</a>.</p>
+    <p>Sansec 2026-10-22 atnaujinime teigia, kad masinis išnaudojimas mažiau tikėtinas, nei baimintasi: vieši įrodomieji pavyzdžiai neveikia numatytoje PHP instaliacijoje. Vis tiek verta atnaujinti.</p>
+
+    <h2 style="margin-top:36px">Kam <span class="hit">aktualu</span></h2>
+    <p>Visiems, kurių serveryje veikia PHP ir kurie nėra įdiegę pataisytos versijos. Pataisytos versijos &ndash; 8.5.12, 8.4.27, 8.3.36 ir 8.2.35, išleistos 2026-10-21 (<a href="https://www.php.net/releases/" rel="noopener">php.net, išleidimai</a>; <a href="https://www.php.net/ChangeLog-8.php" rel="noopener">PHP 8 pakeitimų sąrašas</a>). PHP 8.1 ir senesnėms versijoms oficialaus pataisymo nėra &ndash; yra tik Linux paketų tiekėjų atnaujinimai (angl. backports) (<a href="https://sansec.io/research/php2shell" rel="noopener">Sansec</a>). Palaikomų versijų sąrašas: <a href="https://www.php.net/supported-versions.php" rel="noopener">php.net</a>.</p>
+    <p>Europos lygiu klausimą aptarė ir ENISA bei nacionalinės CSIRT komandos: <a href="https://www.enisa.europa.eu/news/joint-statement-on-critical-php-vulnerabilities" rel="noopener">bendras pareiškimas</a>.</p>
+
+    <h2 style="margin-top:36px">Kaip patikrinti <span class="hit">PHP versiją</span></h2>
+    <ul>
+      <li>Serveryje: <code>php -v</code>. Atkreipkite dėmesį, kad komandinės eilutės ir svetainės PHP versijos gali skirtis.</li>
+      <li>Hostingo valdymo skydelyje: skiltis &bdquo;PHP versija&ldquo; (cPanel, Plesk, DirectAdmin ir kt.).</li>
+      <li>Laikinas <code>phpinfo()</code> puslapis rodo tą versiją, kurią naudoja svetainė. Pasižiūrėję failą būtinai ištrinkite &ndash; jis atskleidžia daug serverio informacijos.</li>
+      <li>Linux paketų tiekėjai kartais pataiso senesnę versiją nekeisdami numerio, todėl versijos numeris ne visada parodo tikrą būseną. Tikslią informaciją rasite savo tiekėjo saugumo pranešimuose.</li>
+    </ul>
+
+    <h2 style="margin-top:36px">Ką <span class="hit">daryti</span></h2>
+    <ul>
+      <li>Versijos 8.5, 8.4, 8.3 ar 8.2: atnaujinkite iki 8.5.12, 8.4.27, 8.3.36 arba 8.2.35 (ar naujesnės).</li>
+      <li>8.1 ar senesnė: naudokite savo Linux tiekėjo pataisytą paketą arba pereikite į palaikomą PHP versiją. Prieš perkeldami pasidarykite kopiją ir išbandykite svetainę.</li>
+      <li>Antra problema, CVE-2026-115560 (2026-10-23): laikinas sprendimas &ndash; <code>session.upload_progress.enabled=0</code>. Pranešta, tikslinama: remiuosi vienu antriniu šaltiniu (<a href="https://cirt.gy/article/al2026_38-php-warns-of-new-unpatched-vulnerability-october-23rd-2026/" rel="noopener">Gajanos CIRT, 2026-10-23</a>), tad sekite oficialų php.net pranešimą.</li>
+      <li>Jei įtariate, kad svetainė jau užkrėsta: nieko netrinkite, pasidarykite kopiją, pakeiskite slaptažodžius ir parašykite man.</li>
+    </ul>
+    <p class="note">Ši informacija atnaujinta 2026-10-24 ir gali keistis. Prieš veikdami pasitikrinkite aukščiau nurodytus šaltinius.</p>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <div class="eyebrow">Kuo galiu padėti</div>
+    <h2>Nemokama patikra <span class="hit">ir užlopimas</span></h2>
+    <p class="lead">Parašykite svetainės adresą &ndash; nemokamai peržiūriu tik tai, kas matoma viešai. Jei reikia atnaujinti PHP, CMS ir papildinius, užlopimas ir sutvarkymas kainuoja nuo 390&nbsp;€. Prieš keisdamas darau kopiją, po darbo gaunate pakeitimų sąrašą. Nesu įsilaužimų testuotojas ir tokių testų neatlieku.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/#uzklausa">Parašyti dėl nemokamos išorinės patikros</a>
+      <a class="btn btn-ghost" href="/#kainos">Kainos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container">© 2026 Vaidas Bagdonas, individuali veikla, pažymos Nr. 1548006 · <a href="mailto:info@vaidasbagdonas.com">info@vaidasbagdonas.com</a> · <a href="/">Pradžia</a> · <a href="/svetaines/">Svetainės</a> · <a href="/privatumas/">Privatumas</a></div></footer>
+
+<div class="sticky"><a class="btn btn-primary" href="/#uzklausa">Parašyti dėl nemokamos patikros</a></div>
+
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
