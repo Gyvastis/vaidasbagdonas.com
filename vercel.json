@@ -99,12 +99,12 @@
   "redirects": [
     {
       "source": "/svetaine",
-      "destination": "/",
+      "destination": "/svetaines/",
       "permanent": true
     },
     {
       "source": "/svetaine/",
-      "destination": "/",
+      "destination": "/svetaines/",
       "permanent": true
     },
     {
