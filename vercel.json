@@ -99,12 +99,32 @@
   "redirects": [
     {
       "source": "/svetaine",
-      "destination": "/svetaines/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/svetaine/",
-      "destination": "/svetaines/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/svetaines",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/svetaines/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/websites",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/websites/",
+      "destination": "/en/",
       "permanent": true
     },
     {

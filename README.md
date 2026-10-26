@@ -3,7 +3,8 @@
 Personal site, plain static HTML on Vercel (deploys from `master`). Same green/lime style as the
 paslaugos.lt profile gallery (`~/Sites/paslaugos/gallery/v3`).
 
-- `index.html` – Lithuanian (clients from paslaugos.lt), `en/index.html` – English (LinkedIn).
+- `index.html` – Lithuanian websites offer (main; clients from paslaugos.lt), `en/index.html` – English (LinkedIn).
+- `saugumas/index.html` / `en/security/index.html` – security offer (second, linked from the nav). Old `/svetaines/`, `/svetaine`, `/en/websites/` 301 to `/` and `/en/` (`vercel.json`).
 - `style.css` – shared styles. `img/` – avatar, project screenshots, `og.jpg` share image.
 - `tools/og.html` / `tools/og-en.html` – sources of `img/og.jpg` / `img/og-en.jpg` (1200×630); render with a headless browser screenshot.
 - Links kept professional only: email, LinkedIn, paslaugos.lt. No phone number (spam).
